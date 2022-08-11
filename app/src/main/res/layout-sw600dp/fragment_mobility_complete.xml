@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+    <ImageButton
+            android:id="@+id/back_btn"
+            style="@style/back_btn_style"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon_gray"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/btn_finish"
+            style="@style/common_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/hurme_geometric_sans1_bold"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/finish"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/back_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/back_btn">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:lineSpacingExtra="0sp"
+                android:text="Test Results"
+                android:textColor="#333333"
+                android:textSize="30sp" />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/congratulations_you_have_completed_the_test"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout4">
+
+        <FrameLayout
+                android:id="@+id/trunk_result"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trunk_mobility_test_result" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1"
+                        android:gravity="center_horizontal"
+                        android:text="Trunk"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                <TextView
+                        android:id="@+id/trunk_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="0sp"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/shoulder_result"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shoulder_mobility_test_result" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1"
+                        android:gravity="center_horizontal"
+                        android:text="Shoulder"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                <TextView
+                        android:id="@+id/shoulder_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="0sp"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/hip_result"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hip_mobility_test_result" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1"
+                        android:gravity="center_horizontal"
+                        android:text="Hip"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                <TextView
+                        android:id="@+id/hip_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="0sp"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/ankle_result"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ankle_mobility_test_result" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1"
+                        android:gravity="center_horizontal"
+                        android:text="Ankle"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                <TextView
+                        android:id="@+id/ankle_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="0sp"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

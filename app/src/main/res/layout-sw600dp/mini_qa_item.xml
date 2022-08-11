@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="144dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:id="@+id/video_image"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/place_holder"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:id="@+id/item_playing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B2000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/playing_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:text="Playing"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:breakStrategy="simple"
+            android:ellipsize="end"
+            android:fontFamily="@font/hurme_geometric_sans1"
+            android:maxLines="3"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="-2sp"
+                android:text="-:-"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="-2sp"
+                android:text="Video &amp; Audio"
+                android:textColor="#cacaca"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

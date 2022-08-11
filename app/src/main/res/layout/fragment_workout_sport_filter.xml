@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            style="@style/back_btn_style"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon_gray"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/hurme_geometric_sans1"
+            android:gravity="center_horizontal"
+            android:text="Clear all"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <ScrollView
+        android:id="@+id/sear_tags_flexbox_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:text="Equipment"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/equipment_tags_flexbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:alignContent="center"
+                app:flexWrap="wrap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:text="Focus Areas"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/focused_area_tags_flexbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:alignContent="center"
+                app:flexWrap="wrap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:text="Duration"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/time_all"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:gravity="center"
+                    android:text="All"
+                    android:textColor="@color/daily_time_color_selector"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time_10_mins"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:gravity="center"
+                    android:text="10 mins"
+                    android:textColor="@color/daily_time_color_selector"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time_20_mins"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:gravity="center"
+                    android:text="20 mins"
+                    android:textColor="@color/daily_time_color_selector"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time_30_mins"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:gravity="center"
+                    android:text="30 mins"
+                    android:textColor="@color/daily_time_color_selector"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Pre videos only"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/pre_video_switch_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Post videos only"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/post_video_switch_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/apply_btn"
+        style="@style/common_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:text="Apply"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

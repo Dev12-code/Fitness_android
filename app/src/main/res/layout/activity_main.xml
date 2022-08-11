@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+
+    <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/navigation_view_all"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    <LinearLayout
+            android:id="@+id/navigation_view_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+        <fragment
+                android:id="@+id/castMiniController"
+                class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        <LinearLayout
+                android:id="@+id/navigation_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#DDD9FF" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/windowBackground"
+                    android:elevation="20dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:theme="@style/Widget.BottomNavigationView"
+                    app:itemBackground="@android:color/white"
+                    app:itemHorizontalTranslationEnabled="false"
+                    app:itemIconTint="@color/navigation_color"
+                    app:itemTextColor="@color/navigation_color"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/navigator" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

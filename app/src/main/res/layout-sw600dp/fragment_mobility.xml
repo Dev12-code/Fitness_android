@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/recovery_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+            android:id="@+id/include"
+            layout="@layout/main_header_white_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#fafafa"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="0dp">
+
+            <ImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/user_avatar_default" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/hurme_geometric_sans2_bold"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="0sp"
+                android:maxLines="2"
+                android:text="Name’s user "
+                android:textColor="#333333"
+                android:textSize="30sp" />
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/mobility_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="@font/hurme_geometric_sans1"
+                        android:gravity="center_horizontal"
+                        android:text="Check your body’s flexibility today."
+                        android:textColor="#666666"
+                        android:textColorLink="#1d00ff"
+                        android:textSize="20sp" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="60dp"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                            <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                        android:id="@+id/circularProgressBar_trunk"
+                                        android:layout_width="160dp"
+                                        android:layout_height="160dp"
+                                        android:background="@drawable/circle_progress_bg"
+                                        android:foreground="?attr/selectableItemBackground"
+                                        app:cpb_background_progressbar_color="@color/transparent"
+                                        app:cpb_background_progressbar_width="30dp"
+                                        app:cpb_progress_direction="to_right"
+                                        app:cpb_progress_max="100"
+                                        app:cpb_progressbar_width="12dp"
+                                        app:cpb_round_border="false" />
+
+                                <TextView
+                                        android:id="@+id/trunk_progress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/hurme_geometric_sans1_black"
+                                        android:text="0%"
+                                        android:textSize="24sp" />
+                            </FrameLayout>
+
+                            <TextView
+                                    android:id="@+id/tv_trunk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                                    android:gravity="center"
+                                    android:text="Trunk"
+                                    android:textColor="#666666"
+                                    android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                            <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                        android:id="@+id/circularProgressBar_shoulder"
+                                        android:layout_width="160dp"
+                                        android:layout_height="160dp"
+                                        android:background="@drawable/circle_progress_bg"
+                                        android:foreground="?attr/selectableItemBackground"
+                                        app:cpb_background_progressbar_color="@color/transparent"
+                                        app:cpb_background_progressbar_width="30dp"
+                                        app:cpb_progress_direction="to_right"
+                                        app:cpb_progress_max="100"
+                                        app:cpb_progressbar_width="12dp"
+                                        app:cpb_round_border="false" />
+
+                                <TextView
+                                        android:id="@+id/shoulder_progress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/hurme_geometric_sans1_black"
+                                        android:text="0%"
+                                        android:textSize="24sp" />
+                            </FrameLayout>
+
+                            <TextView
+                                    android:id="@+id/tv_shoulder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                                    android:gravity="center"
+                                    android:text="Shoulder"
+                                    android:textColor="#666666"
+                                    android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                            <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                        android:id="@+id/circularProgressBar_hip"
+                                        android:layout_width="160dp"
+                                        android:layout_height="160dp"
+                                        android:background="@drawable/circle_progress_bg"
+                                        android:foreground="?attr/selectableItemBackground"
+                                        app:cpb_background_progressbar_color="@color/transparent"
+                                        app:cpb_background_progressbar_width="30dp"
+                                        app:cpb_progress_direction="to_right"
+                                        app:cpb_progress_max="100"
+                                        app:cpb_progressbar_width="12dp"
+                                        app:cpb_round_border="false" />
+
+                                <TextView
+                                        android:id="@+id/hip_progress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/hurme_geometric_sans1_black"
+                                        android:text="0%"
+                                        android:textSize="24sp" />
+                            </FrameLayout>
+
+                            <TextView
+                                    android:id="@+id/tv_hip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                                    android:gravity="center"
+                                    android:text="Hip"
+                                    android:textColor="#666666"
+                                    android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                            <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                        android:id="@+id/circularProgressBar_ankle"
+                                        android:layout_width="160dp"
+                                        android:layout_height="160dp"
+                                        android:background="@drawable/circle_progress_bg"
+                                        android:foreground="?attr/selectableItemBackground"
+                                        app:cpb_background_progressbar_color="@color/transparent"
+                                        app:cpb_background_progressbar_width="30dp"
+                                        app:cpb_progress_direction="to_right"
+                                        app:cpb_progress_max="100"
+                                        app:cpb_progressbar_width="12dp"
+                                        app:cpb_round_border="false" />
+
+                                <TextView
+                                        android:id="@+id/ankle_progress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/hurme_geometric_sans1_black"
+                                        android:text="0%"
+                                        android:textSize="24sp" />
+                            </FrameLayout>
+
+                            <TextView
+                                    android:id="@+id/tv_ankle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                                    android:gravity="center"
+                                    android:text="Ankle"
+                                    android:textColor="#666666"
+                                    android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <Button
+            android:id="@+id/mobility_btn"
+            style="@style/common_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/hurme_geometric_sans1_bold"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/take_the_mobility_test"
+            app:layout_constraintBottom_toTopOf="@+id/tv_retest_today" />
+
+    <TextView
+            android:id="@+id/tv_retest_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+            android:gravity="center"
+            android:text="@string/retest_my_mobility"
+            android:textColor="@color/main_color"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

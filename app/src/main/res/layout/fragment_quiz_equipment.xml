@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/color_black"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/iv_quiz_equipment"
+            app:layout_constraintDimensionRatio="H, 1:0.8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/hurme_geometric_sans2_bold"
+                android:gravity="center_horizontal"
+                android:text="What equipment/household items do you have access to?"
+                android:textColor="#ffffff"
+                android:textSize="27sp" />
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginEnd="20dp"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="4dp"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_bar"
+                android:scrollbars="vertical">
+
+            <LinearLayout
+                    android:id="@+id/quiz_equipment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical"
+                    android:paddingStart="50dp">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+                android:id="@+id/quiz_done_btn"
+                style="@style/common_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="@string/btn_done" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

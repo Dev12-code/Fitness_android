@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/dialog_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:gravity="center_horizontal"
+                android:textColor="#333333"
+                android:textSize="26sp"
+                tools:text="Lorem Ipsum" />
+
+        <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:gravity="center_horizontal"
+                android:textColor="#666666"
+                android:textSize="22sp"
+                tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <Button
+                    android:id="@+id/left_btn"
+                    style="@style/common_red_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_red_btn_bg"
+                    android:elevation="0dp"
+                    android:outlineSpotShadowColor="@color/transparent"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="Cancel"
+                    android:textAllCaps="false" />
+
+            <Button
+                    android:id="@+id/right_btn"
+                    style="@style/common_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="Ok" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

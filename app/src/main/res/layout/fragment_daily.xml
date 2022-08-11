@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+    <include
+            layout="@layout/main_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:text="@string/daily_maintenance"
+                    android:textColor="@color/color_text"
+                    android:textSize="18sp" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:text="@string/maintain_your_mobility_will_today_s_guided_featured_video_or_choose_your_own_from_the_library_below"
+                    android:textColor="@color/daily_time_color_selector"
+                    android:textSize="16sp" />
+
+            <FrameLayout
+                    android:id="@+id/feature_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="16dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="visible">
+
+                <ImageView
+                        android:id="@+id/feature_banner_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/place_holder" />
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/gradient_bg" />
+
+                <TextView
+                        android:id="@+id/feature_banner_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="25dp"
+                        android:fontFamily="@font/hurme_geometric_sans2_bold"
+                        android:lineSpacingExtra="0sp"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp"
+                        tools:text="Feature video’s Title" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp">
+
+                    <TextView
+                            android:id="@+id/video_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                            android:letterSpacing="0.02"
+                            android:lineSpacingExtra="-2sp"
+                            tools:text="5"
+                            android:textColor="#dddddd"
+                            android:textSize="10sp" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hurme_geometric_sans1"
+                            android:letterSpacing="0.02"
+                            android:lineSpacingExtra="-2sp"
+                            android:text=" min"
+                            android:textColor="#dddddd"
+                            android:textSize="10sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:text="@string/looking_for_something_specific"
+                    android:textColor="@color/color_text"
+                    android:textSize="18sp" />
+
+            <Button
+                    android:id="@+id/filter_btn"
+                    style="@style/common_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="@string/filter_by_focus_area_and_or_time" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:text="@string/related_videos"
+                    android:textColor="@color/color_text"
+                    android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/related_video_recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:text="@string/best_sellers"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/gear_recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

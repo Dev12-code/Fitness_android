@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatCheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/equip_check_1"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="?attr/selectableItemBackground"
+    android:buttonTint="@color/checkbox_color"
+    android:ellipsize="end"
+    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+    android:gravity="center_vertical"
+    android:paddingStart="20dp"
+    android:text="Lacrosse Ball + Foam Roller"
+    android:textColor="@color/checkbox_text_color"
+    android:textSize="22sp" />

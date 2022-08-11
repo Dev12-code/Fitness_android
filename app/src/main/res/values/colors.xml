@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base colors-->
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorAccent">#b5b5b5</color>
+    <color name="colorSecondary">#2d00ff</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#2d00ff</color>
+
+    <color name="translucentBackground">#ED000000</color>
+
+    <!-- Themes color -->
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="background_main">#f2f2f2</color>
+    <color name="backgroundVideoConferencingEnter">#6d8f8f</color>
+    <color name="color_black_20">#33000000</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white_10">#11ffffff</color>
+    <color name="main_color">#1d00ff</color>
+    <color name="color_text">#333333</color>
+    <color name="color_text_secondary">#666666</color>
+    <color name="color_ratingbar_normal">#718cfe</color>
+    <color name="color_ratingbar_active">#718cfe</color>
+    <color name="color_red_color">#ff5555</color>
+    <color name="color_yellow_color">#ffbd34</color>
+    <color name="color_green_color">#0bd493</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_white_opacity_85">#D9FFFFFF</color>
+    <color name="color_grey">#e9e9ea</color>
+    <color name="color_text_888888">#888888</color>
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_a1a1a1">#a1a1a1</color>
+    <color name="color_ff5555">#ff5555</color>
+    <color name="color_fade">#D9000000</color>
+    <color name="color_fade_start_color">#00000000</color>
+    <color name="color_09839a">#09839a</color>
+</resources>

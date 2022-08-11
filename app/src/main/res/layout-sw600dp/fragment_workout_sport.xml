@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+    <include
+            layout="@layout/main_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp" />
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/hurme_geometric_sans2_bold"
+                    android:lineSpacingExtra="0sp"
+                    android:text="@string/prep_recover"
+                    android:textColor="#333333"
+                    android:textSize="30sp" />
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="16dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans2_bold"
+                        android:lineSpacingExtra="0sp"
+                        android:text="@string/warm_up"
+                        android:textColor="#333333"
+                        android:textSize="24sp" />
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/warm_up_recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="16dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans2_bold"
+                        android:lineSpacingExtra="0sp"
+                        android:text="@string/by_workout"
+                        android:textColor="#333333"
+                        android:textSize="24sp" />
+
+                <LinearLayout
+                        android:id="@+id/workout_view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_light"
+                            android:lineSpacingExtra="0sp"
+                            android:text="@string/view_all"
+                            android:textColor="#4a4a4a"
+                            android:textSize="22sp" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/view_all_icon" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/workout_recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="16dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans2_bold"
+                        android:lineSpacingExtra="0sp"
+                        android:text="@string/by_sport"
+                        android:textColor="#333333"
+                        android:textSize="24sp" />
+
+                <LinearLayout
+                        android:id="@+id/sport_view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_light"
+                            android:lineSpacingExtra="0sp"
+                            android:text="@string/view_all"
+                            android:textColor="#4a4a4a"
+                            android:textSize="22sp" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/view_all_icon" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/sport_recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="16dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans2_bold"
+                        android:lineSpacingExtra="0sp"
+                        android:text="@string/by_archetype"
+                        android:textColor="#333333"
+                        android:textSize="24sp" />
+
+                <LinearLayout
+                        android:id="@+id/archetype_view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_light"
+                            android:lineSpacingExtra="0sp"
+                            android:text="@string/view_all"
+                            android:textColor="#4a4a4a"
+                            android:textSize="22sp" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/view_all_icon" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/archetype_recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

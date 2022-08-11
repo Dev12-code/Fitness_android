@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/color_black">
+
+    <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/iv_quiz_activity_level"
+            app:layout_constraintDimensionRatio="H, 1:0.8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/fade_image_background"
+            app:layout_constraintDimensionRatio="H, 1:0.8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/hurme_geometric_sans2_bold"
+                android:text="Why are you here?"
+                android:textColor="#ffffff"
+                android:textSize="27sp" />
+
+        <FrameLayout
+                android:id="@+id/why_quiz_1"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/quiz_item_transparent_selector_bg">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center"
+                        android:lineSpacingExtra="0sp"
+                        android:text="I’m an athlete"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/hurme_geometric_sans1"
+                        android:lineSpacingExtra="0sp"
+                        android:text="trying to get better at my sport or workouts"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/why_quiz_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/quiz_item_transparent_selector_bg"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:gravity="center"
+                android:lineSpacingExtra="0sp"
+                android:text="I’m in pain"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        <FrameLayout
+                android:id="@+id/why_quiz_3"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/quiz_item_transparent_selector_bg">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center"
+                        android:lineSpacingExtra="0sp"
+                        android:text="I want to be more"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/hurme_geometric_sans1"
+                        android:lineSpacingExtra="0sp"
+                        android:text="flexible and improve my range of motion"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+    <ImageButton
+            android:id="@+id/back_btn"
+            style="@style/back_btn_style"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon_gray"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tv_test_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/hurme_geometric_sans2_bold"
+            android:lineSpacingExtra="0sp"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/back_btn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/back_btn"
+            tools:text="1 out of 16" />
+
+    <Button
+            android:id="@+id/btn_exit_the_test"
+            style="@style/common_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/hurme_geometric_sans1_bold"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/exit_the_test"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_test_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_test_header" />
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/hurme_geometric_sans2_bold"
+            android:lineSpacingExtra="0sp"
+            android:text="Mobility Test"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_btn" />
+
+    <include
+            layout="@layout/mobility_test_item"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

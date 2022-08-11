@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/recovery_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        style="@style/back_btn_style"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/transparent"
+        android:foreground="?android:selectableItemBackground"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_ico"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        android:outlineSpotShadowColor="#2d00ff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="@id/view"
+        card_view:layout_editor_absoluteX="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recovery_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:text="Recover Password"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/recovery_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5.5sp"
+                android:text="Please enter your registered email to reset \nyour password."
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/recovery_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recovery_email_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:lineHeight="14sp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/recovery_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recovery_otp_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:hint="OTP (One Time Password)"
+                    android:inputType="text"
+                    android:lineHeight="14sp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/recovery_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recovery_new_password_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:hint="New Password"
+                    android:inputType="textVisiblePassword"
+                    android:lineHeight="14sp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/recovery_new_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recovery_new_password_confirm_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:hint="Confirm Password"
+                    android:inputType="textVisiblePassword"
+                    android:lineHeight="14sp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/recovery_btn"
+        style="@style/common_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:elevation="0dp"
+        android:outlineSpotShadowColor="@color/transparent"
+        android:text="@string/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

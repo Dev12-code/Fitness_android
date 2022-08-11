@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="@font/hurme_geometric_sans2_bold"
+                android:gravity="center"
+                android:text="@string/let_s_get_to_know_a_little_bit_about_you"
+                android:textColor="#ffffff"
+                android:textSize="27sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="35dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#e7e7e7"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:hint="First name"
+                    android:inputType="textPersonName"
+                    android:lineHeight="14sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="#e7e7e7"
+                    android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="35dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#e7e7e7"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:hint="Last name"
+                    android:inputType="textPersonName"
+                    android:lineHeight="14sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="#e7e7e7"
+                    android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</FrameLayout>

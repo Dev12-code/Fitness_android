@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bonus_content_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/video_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="0sp"
+            android:text="-"
+            android:textColor="#a5a5a5"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hurme_geometric_sans1"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="0sp"
+            android:text=" Videos"
+            android:textColor="#a5a5a5"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/dot_888888" />
+
+        <TextView
+            android:id="@+id/video_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="0sp"
+            android:text="-"
+            android:textColor="#a5a5a5"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hurme_geometric_sans1"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="0sp"
+            android:text=" hours "
+            android:textColor="#a5a5a5"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/video_mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="0sp"
+            android:text="-"
+            android:textColor="#a5a5a5"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hurme_geometric_sans1"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="0sp"
+            android:text=" mins"
+            android:textColor="#a5a5a5"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bonus_content_detail_recylerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/empty_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:gravity="center"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/empty_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:gravity="center"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

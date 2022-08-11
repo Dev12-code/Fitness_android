@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                <ImageView
+                        android:id="@+id/mobility_test_1_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/place_holder" />
+
+                <View
+                        android:id="@+id/mobility_test_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mobility_test_bg_selector" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="16dp">
+
+                    <View
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/red_badge" />
+
+                    <TextView
+                            android:id="@+id/mobility_test_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            tools:text="Pose as point 1d masd asm,d as,md as,md asm,d asm,d as,d " />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/selected_mobility_test_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/background_border_mobility_test_list"
+                    android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                <ImageView
+                        android:id="@+id/mobility_test_2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/place_holder" />
+
+                <View
+                        android:id="@+id/mobility_test_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mobility_test_bg_selector" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="16dp">
+
+                    <View
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/yellow_badge" />
+
+                    <TextView
+                            android:id="@+id/mobility_test_2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            tools:text="Pose as point 1" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/selected_mobility_test_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/background_border_mobility_test_list"
+                    android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                <ImageView
+                        android:id="@+id/mobility_test_3_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/place_holder" />
+
+                <View
+                        android:id="@+id/mobility_test_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mobility_test_bg_selector" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="16dp">
+
+                    <View
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/green_badge" />
+
+                    <TextView
+                            android:id="@+id/mobility_test_3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            tools:text="Pose as point 1" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/selected_mobility_test_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/background_border_mobility_test_list"
+                    android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

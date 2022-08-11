@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/streaks_background" />
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/progress_badge"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        app:cpb_background_progressbar_color="#b6bbd8"
+                        app:cpb_background_progressbar_width="12dp"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progress="0"
+                        app:cpb_progressbar_color="@color/colorTextSecondary"
+                        app:cpb_progress_max="100"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_badge"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        tools:src="@drawable/place_holder" />
+            </FrameLayout>
+
+            <TextView
+                    android:id="@+id/tv_your_streaks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="20sp"
+                    tools:text="@string/your_streak_day" />
+
+            <TextView
+                    android:id="@+id/tv_your_streaks_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:gravity="center"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="20sp"
+                    tools:text="@string/your_streak_message" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/achievement_recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:paddingTop="20dp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/empty_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:gravity="center"
+                android:textColor="@color/color_text"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/empty_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:gravity="center"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btnOk"
+            style="@style/common_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/hurme_geometric_sans1_bold"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/ok"
+            android:visibility="gone" />
+</FrameLayout>

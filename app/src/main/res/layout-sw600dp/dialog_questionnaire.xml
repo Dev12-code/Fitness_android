@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/dialog_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:gravity="center"
+                android:text="@string/what_would_you_like_to_do_today"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+
+        <TextView
+                android:id="@+id/answer_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="-1sp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/i_d_like_to_do_the_daily_maintenance"
+                android:textColor="#718cfe"
+                android:textSize="21sp" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#cfd4ea" />
+
+        <TextView
+                android:id="@+id/answer_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="-1sp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/i_want_to_prepare_or_recover_from_a_workout_or_sport"
+                android:textColor="#718cfe"
+                android:textSize="21sp" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#cfd4ea" />
+
+        <TextView
+                android:id="@+id/answer_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="6sp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:text="I’m in pain or want to work on a specific body part"
+                android:textColor="#718cfe"
+                android:textSize="21sp" />
+
+        <View
+                android:id="@+id/line_4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfd4ea"
+                android:visibility="gone" />
+
+        <TextView
+                android:id="@+id/answer_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="6sp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/i_want_to_take_the_mobility_test"
+                android:textColor="#718cfe"
+                android:textSize="21sp"
+                android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

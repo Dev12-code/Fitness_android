@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/fireworks" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/btnOk"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_badge"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                tools:src="@drawable/place_holder" />
+
+        <TextView
+                android:id="@+id/tv_badge_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:gravity="center"
+                android:textColor="@color/colorSecondary"
+                android:textSize="18sp"
+                tools:text="Cheetah" />
+
+        <TextView
+                android:id="@+id/tv_badge_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:gravity="center"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="14sp"
+                tools:text="@string/milestone_points" />
+
+        <TextView
+                android:id="@+id/tv_congrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:gravity="center"
+                android:text="@string/congratulation"
+                android:textColor="@color/color_text"
+                android:textSize="24sp" />
+
+        <TextView
+                android:id="@+id/tv_congrat_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:gravity="center"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="14sp"
+                tools:text="@string/achievement_congrat_message" />
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btnOk"
+            style="@style/common_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/hurme_geometric_sans1_bold"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/ok"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

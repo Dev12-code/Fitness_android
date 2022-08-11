@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "212450975274",
+    "firebase_url": "https://new-the-ready-state.firebaseio.com",
+    "project_id": "new-the-ready-state",
+    "storage_bucket": "new-the-ready-state.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212450975274:android:6be0007c5ed7e594a96d53",
+        "android_client_info": {
+          "package_name": "com.cbi.app.trs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212450975274-lpdvf1d7manccbt4h63b239oqu8139mc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5TufD9Pt2cOqRQ2nFa0px5U6UXbqyhW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212450975274-lpdvf1d7manccbt4h63b239oqu8139mc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "212450975274-r252ec92583vtjll0luh6ipa1bsdejp8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cbi.app.newTRS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

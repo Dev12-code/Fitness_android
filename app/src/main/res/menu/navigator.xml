@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_daily"
+        android:icon="@drawable/daily_1"
+        android:title="@string/daily_menu"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/navigation_pain"
+        android:icon="@drawable/pain"
+        android:title="@string/pain_body_part_menu"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/navigation_workout"
+        android:icon="@drawable/workout"
+        android:title="@string/prep_recover"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/navigation_mobility"
+        android:icon="@drawable/mobility"
+        android:title="@string/mobility_test"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/navigation_bonus"
+        android:icon="@drawable/bonus_content"
+        android:title="@string/bonus_content"
+        app:showAsAction="always|withText" />
+
+</menu>

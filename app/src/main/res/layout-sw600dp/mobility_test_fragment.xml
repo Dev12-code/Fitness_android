@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:fillViewport="true"
+            android:layout_marginEnd="12dp"
+            android:scrollbarSize="6dp"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_bar_blue"
+            android:scrollbars="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/test_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="#333333"
+                    android:textSize="24sp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/mobility_test_bg"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/test_name">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                            android:text="Instructions"
+                            android:textColor="#666666"
+                            android:textSize="20sp" />
+
+                    <LinearLayout
+                            android:id="@+id/instruction_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                            android:text="Compensations"
+                            android:textColor="#666666"
+                            android:textSize="20sp" />
+
+                    <LinearLayout
+                            android:id="@+id/compensation_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="85dp"
+                            android:orientation="vertical" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+            android:id="@+id/mobility_test_btn"
+            style="@style/common_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:text="@string/enter_my_score"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="20dp" />
+</FrameLayout>

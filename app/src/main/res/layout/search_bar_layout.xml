@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="34dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="5dp"
+    android:outlineSpotShadowColor="#2d00ff"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="17dp"
+    app:cardElevation="5dp">
+
+    <View
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/search_icon" />
+
+    <EditText
+        android:id="@+id/search_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/hurme_geometric_sans1"
+        android:hint="Search by Focus Areas"
+        android:imeOptions="actionSearch"
+        android:lineSpacingExtra="-6sp"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textColorHint="#929292"
+        android:textSize="14sp" />
+</androidx.cardview.widget.CardView>

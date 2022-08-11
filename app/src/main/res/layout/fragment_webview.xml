@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/webview_bg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/help_bg" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#22000000" />
+
+    <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp" />
+
+    <ImageButton
+            android:id="@+id/back_btn"
+            style="@style/back_btn_style"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_ico"
+            android:visibility="visible" />
+</FrameLayout>

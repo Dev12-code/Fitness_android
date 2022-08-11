@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:foreground="?attr/selectableItemBackground">
+
+    <FrameLayout
+            android:layout_width="162dp"
+            android:layout_height="91dp">
+
+        <ImageView
+                android:id="@+id/feature_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/place_holder"
+                android:scaleType="centerCrop" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/gradient_bg" />
+
+        <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="17dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                android:lineSpacingExtra="2sp"
+                android:maxLines="2"
+                android:text="Lorem Ipsum is simply dummy text"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:id="@+id/video_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="5"
+                    android:textColor="#dddddd"
+                    android:textSize="10sp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="-2sp"
+                    android:text=" min"
+                    android:textColor="#dddddd"
+                    android:textSize="10sp" />
+        </LinearLayout>
+
+        <FrameLayout
+                android:id="@+id/see_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#718cfe"
+                android:visibility="gone">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                    android:lineSpacingExtra="0sp"
+                    android:text="@string/see_more"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+        </FrameLayout>
+
+        <View
+                android:id="@+id/pain_detail_premium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B2000000"
+                android:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

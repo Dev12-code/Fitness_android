@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout-sw360dp/fragment_login.xml" value="0.3225806451612903" />
+        <entry key="app/src/main/res/layout-sw400dp/fragment_login.xml" value="0.21739130434782608" />
+        <entry key="app/src/main/res/layout-sw600dp/design_bottom_navigation_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-sw600dp/fragment_login.xml" value="0.16393442622950818" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.47619047619047616" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

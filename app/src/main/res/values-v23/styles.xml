@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.NoFullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">@color/background_main</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="mediaRouteTheme">@style/CustomMediaRouterTheme</item>
+    </style>
+
+    <style name="CustomMediaRouterTheme" parent="Theme.MediaRouter.Light">
+        <item name="mediaRouteButtonStyle">@style/CustomMediaRouteButtonStyle</item>
+    </style>
+
+    <style name="CustomMediaRouteButtonStyle" parent="Widget.MediaRouter.Light.MediaRouteButton">
+        <item name="mediaRouteButtonTint">#1D00FF</item>
+    </style>
+</resources>

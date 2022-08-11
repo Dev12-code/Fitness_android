@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movie_play_height">320dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size">16sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size">17sp</dimen>
+</resources>

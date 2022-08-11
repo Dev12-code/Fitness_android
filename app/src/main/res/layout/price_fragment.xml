@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H, 1:1.2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+            android:id="@+id/back_btn"
+            style="@style/back_btn_style"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_ico"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:id="@+id/skip_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="0sp"
+                android:text="Skip"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+    </FrameLayout>
+
+    <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gradient_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+            android:id="@+id/price_option_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/tv_try_for_free"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/hurme_geometric_sans2_bold"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/which_plan_do_you_want"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                    android:id="@+id/pay_for_month"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_price_unselected"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp">
+
+                <ImageView
+                        android:id="@+id/iv_tick_month"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/iv_tick"
+                        android:visibility="invisible" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center"
+                        android:text="@string/monthly_subscription_plan"
+                        android:textColor="@color/main_color"
+                        android:textSize="10sp" />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/pay_for_month_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/hurme_geometric_sans1_bold"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/main_color"
+                            android:textSize="24sp"
+                            tools:text="165000dasdasdas" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hurme_geometric_sans1"
+                            android:gravity="center_horizontal"
+                            android:text="/month"
+                            android:textColor="@color/main_color"
+                            android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_container_free_trial_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="14dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hurme_geometric_sans1"
+                            android:text="Include"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                            android:text="@string/_14_days_free_trial"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/pay_for_year"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/background_price_unselected"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp">
+
+                <ImageView
+                        android:id="@+id/iv_tick_year"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/iv_tick"
+                        android:visibility="invisible" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                        android:gravity="center"
+                        android:text="@string/annually_subscription_plan"
+                        android:textColor="@color/main_color"
+                        android:textSize="10sp" />
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/pay_for_year_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/main_color"
+                                android:textSize="24sp"
+                                tools:text="7238749" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hurme_geometric_sans1"
+                                android:gravity="center_horizontal"
+                                android:text="/year"
+                                android:textColor="@color/main_color"
+                                android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="10dp">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hurme_geometric_sans1"
+                                android:text="Save OVER "
+                                android:textColor="@color/color_ff5555"
+                                android:textSize="11sp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                                android:text="10%"
+                                android:textColor="@color/color_ff5555"
+                                android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/ll_container_free_trial_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="14dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hurme_geometric_sans1"
+                                android:text="Include"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:fontFamily="@font/hurme_geometric_sans1_semi_bold"
+                                android:text="@string/_14_days_free_trial"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_try_for_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/hurme_geometric_sans2_bold"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/try_trs_app_for_free"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/iv_arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_down"
+            app:layout_constraintBottom_toTopOf="@id/expandable_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+            android:visibility="gone"
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+
+                android:id="@+id/tnc_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/tn_content"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            <TextView
+                    android:id="@+id/tv_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/terms_of_service"
+                    android:textColor="@color/color_09839a"
+                    android:textSize="15sp" />
+
+            <TextView
+                    android:id="@+id/tv_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/color_09839a"
+                    android:textSize="15sp" />
+
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <LinearLayout
+            android:id="@+id/pay_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_rounded_top_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/hurme_geometric_sans2_bold"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="0sp"
+                android:text="Your chosen plan is:"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/hurme_geometric_sans1"
+                android:text="@string/free_14_days_trial"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/pay_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hurme_geometric_sans1_bold"
+                    android:gravity="center_horizontal"
+                    android:text="$399/"
+                    android:textColor="#0fd7ff"
+                    android:textSize="46sp" />
+
+            <TextView
+                    android:id="@+id/pay_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hurme_geometric_sans1"
+                    android:gravity="center_horizontal"
+                    android:text="year"
+                    android:textColor="#0fd7ff"
+                    android:textSize="23sp" />
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/pay_btn"
+                style="@style/common_white_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/hurme_geometric_sans1_bold"
+                android:text="Pay" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

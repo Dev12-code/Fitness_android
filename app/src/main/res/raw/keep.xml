@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+        tools:keep="@drawable/abdominals_diaphragm,@drawable/ankle,@drawable/back_head,
+         @drawable/back_knee,@drawable/back_neck,@drawable/back_shoulder,@drawable/calves,
+          @drawable/chest,@drawable/elbow,@drawable/foot,@drawable/forearm,@drawable/front_hip,@drawable/front_knee,
+           @drawable/front_neck,@drawable/front_shoulder,@drawable/full_body_back,@drawable/full_body_front,@drawable/glutes,@drawable/hamstrings,@drawable/head,@drawable/lumbar_spine,
+            @drawable/pelvis,@drawable/quads,@drawable/shins,@drawable/t_spine,@drawable/wrist_forearm,@drawable/wrist,
+         " />
